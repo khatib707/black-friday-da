@@ -5,14 +5,14 @@
 </style></head><body><main class="main" aria-label="عجلة الحظ"><img class="shade" id="shade" alt=""><div class="canvas" id="canvas"><section class="screen" id="wS" aria-label="جرّب حظّك"><img class="art title" id="title" alt="جـــــرّب حـظـــــك"><img class="art pointer" id="pointer" alt=""><img class="art wheel" id="wheel" alt="ثماني نتائج: شحن مجاني، كاش باك حتى 15%، قسيمة 500 ريال، خصم 5%، حظ أوفر، قسيمة 100 ريال، خصم 10%، كود المفاجأة"><img class="art lever" id="lever" alt=""><button class="spin" id="sp" aria-label="لفهـــــا الحيــن"><img id="spinLabel" alt="لفهـــــا الحيــن"></button><img class="art sponsor-label" id="sponsorLabel" alt="برعـايــة"><img class="art sponsors" id="sponsors" alt="LOCA، Orlema، HEARTS، L’Oréal Paris، REBUNE، globalstar، Garnier، Maybelline، Pastel"></section><section class="screen" id="rS" hidden aria-label="نتيجة العجلة"><h1 class="sr" id="resultTitle"></h1><img class="art panel-art" id="panelArt" alt=""><button class="coupon" id="copyBtn" aria-label="انسخ الكود"><img id="copyIcon" alt=""><span id="code"></span></button><p class="valid" id="valid">الكود صالح لمدة 24 ساعة</p><button class="shop" id="shopBtn" aria-label="تســوّق الآن"><img id="shopLabel" alt="تســوّق الآن"></button><p class="status" id="status" role="status" aria-live="polite"></p></section></div></main><script>
 const SHOP_URL="https://daralamirat.com.sa/";
 const weDATA=[
- {id:"ship",n:"شحن مجاني",c:"TEST-SHIP",i:0,w:12.5,screen:0},
- {id:"cashback",n:"كاش باك حتى 15%",c:"TEST-CASHBACK",i:1,w:12.5,screen:7},
- {id:"voucher500",n:"قسيمة شرائية 500 ريال",c:"TEST-500",i:2,w:12.5,screen:6},
- {id:"d5",n:"خصم 5%",c:"TEST-5",i:3,w:12.5,screen:5},
- {id:"lose",n:"حظ أوفر",c:"",i:4,w:12.5,screen:4},
- {id:"voucher100",n:"قسيمة شرائية 100 ريال",c:"TEST-100",i:5,w:12.5,screen:3},
- {id:"d10",n:"خصم 10%",c:"TEST-10",i:6,w:12.5,screen:2},
- {id:"gift",n:"كود المفاجأة",c:"TEST-GIFT",i:7,w:12.5,screen:1}
+ {id:"ship",n:"شحن مجاني",c:"TEST-SHIP",i:0,w:15,screen:0},
+ {id:"cashback",n:"كاش باك حتى 15%",c:"TEST-CASHBACK",i:1,w:3,screen:7},
+ {id:"voucher500",n:"قسيمة شرائية 500 ريال",c:"TEST-500",i:2,w:0.0004,screen:6},
+ {id:"d5",n:"خصم 5%",c:"TEST-5",i:3,w:30,screen:5},
+ {id:"lose",n:"حظ أوفر",c:"",i:4,w:40,screen:4},
+ {id:"voucher100",n:"قسيمة شرائية 100 ريال",c:"TEST-100",i:5,w:0.005,screen:3},
+ {id:"d10",n:"خصم 10%",c:"TEST-10",i:6,w:7,screen:2},
+ {id:"gift",n:"كود المفاجأة",c:"TEST-GIFT",i:7,w:4.9946,screen:1}
 ];
 const ASSET_BASE="https://raw.githubusercontent.com/khatib707/black-friday-da/main/assets/";
 const ASSETS={"overlay":"overlay.png","title":"title.png","pointer":"pointer.png","lever":"lever.png","wheel":"wheel.png","spin-label":"spin-label.png","sponsor-label":"sponsor-label.png","sponsors":"sponsors.png","shop-label":"shop-label.png","copy-icon":"copy-icon.png","result0":"result0.png","result1":"result1.png","result2":"result2.png","result3":"result3.png","result4":"result4.png","result5":"result5.png","result6":"result6.png","result7":"result7.png"};
