@@ -15,7 +15,7 @@ const weDATA=[
  {id:"gift",n:"كود المفاجأة",c:"TEST-GIFT",i:7,w:4.9946,screen:1}
 ];
 const ASSET_BASE="https://raw.githubusercontent.com/khatib707/black-friday-da/main/assets/";
-const ASSETS={"overlay":"overlay.png","title":"title.png","pointer":"pointer.png","lever":"lever.png","wheel":"wheel.png?v=new-da-20261103","spin-label":"spin-label.png","sponsor-label":"sponsor-label.png","sponsors":"sponsors.png","shop-label":"shop-label.png","copy-icon":"copy-icon.png","result0":"result0.png","result1":"result1.png","result2":"result2.png","result3":"result3.png","result4":"result4.png?v=nov-da-20261108","result5":"result5.png?v=new-da-20261103","result6":"result6.png","result7":"result7.png?v=new-da-20261103"};
+const ASSETS={"overlay":"overlay.png","title":"title.png","pointer":"pointer.png","lever":"lever.png","wheel":"wheel.png?v=new-da-20261103","spin-label":"spin-label.png","sponsor-label":"sponsor-label.png","sponsors":"sponsors.png","shop-label":"shop-label.png","copy-icon":"copy-icon.png","result0":"result0.png","result1":"result1.png","result2":"result2.png","result3":"result3.png","result4":"result4-nov-20261108.png","result5":"result5.png?v=new-da-20261103","result6":"result6.png","result7":"result7.png?v=new-da-20261103"};
 for(const key in ASSETS)ASSETS[key]=ASSET_BASE+ASSETS[key];
 const $=id=>document.getElementById(id);
 for(const [id,key] of Object.entries({shade:"overlay",title:"title",pointer:"pointer",lever:"lever",wheel:"wheel",spinLabel:"spin-label",sponsorLabel:"sponsor-label",sponsors:"sponsors",shopLabel:"shop-label",copyIcon:"copy-icon"}))$(id).src=ASSETS[key];
